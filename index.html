@@ -4,6 +4,7 @@
     <head>
         <title>세상을 바꿀 놀라운 생각, HAEYUM</title>
         <meta charset="UTF-8">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
     </head>
     
     <!--
@@ -14,6 +15,23 @@
     <!-- no-repeat center center fixed -->
     
     <style>
+        
+        @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+        * {
+            font-family: "Nanum Gothic", sans-serif;
+	    }
+        
+        body
+        {
+            margin: 0;
+            padding: 0; 
+        }
+        
+        img
+        {
+            vertical-align:bottom;
+        }
+        
         #intro
         {
             position: relative;
@@ -22,15 +40,15 @@
             
             width: 100%;
             
-            top: 0;
-            left: 0;
-            
-            background: rgb(40, 70, 102) url('./example/img/hero-01.jpg') no-repeat center;
+            background: rgb(40, 70, 102) url('./img/title.jpg') no-repeat center;
             background-size: cover;
             color: #ffff;
             
             margin:0;
             height:100%;
+            
+            vertical-align:top;
+            display: block;
         }
     
         #title
@@ -39,8 +57,11 @@
             font-size: 50px;
             font-family: Apple SD Gothic Neo;
             
-            margin-left: 40px;
-            margin-top: 200px;
+            margin-left: 5%;
+            margin-top: 15%;
+            
+            <!--margin-left: 60%;-->
+            <!--margin-top: 15%;-->
         }
         
         #menu
@@ -56,7 +77,111 @@
         #icon
         {
             color: black;
-            background-color: white;
+            background-color: #AAA;
+            background-size: cover;
+            
+            width: 100%;
+            height:100%;
+            
+            font-size: 20px;
+            text-align: center;
+            
+            font-family: Apple SD Gothic Neo;
+        }
+        
+        #icon_text
+        {
+            font-family: Apple SD Gothic Neo;
+            background-size: cover;
+            
+            vertical-align: middle;
+            line-height: 100px;
+            text-align: center;
+            
+            background-color: #AAA;
+        }
+        
+        #about
+        {
+            color: black;
+            background-color: #F8F9FA;
+            background-size: cover;
+            
+            width: 100%;
+            height:100%;
+            min-height: 200px;
+            margin-top: 0px;
+            
+            
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #about1
+        {
+            color: black;
+            background: rgba(10, 150, 150, 1) url('img/test.png') no-repeat center;
+            background-size: cover;
+            
+            width: 50%;
+            height: 100%;
+            min-height: 400px;
+
+            float: left;
+            display: table;
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #about2
+        {
+            color: white;
+            background-color: #3F7596;
+            background-size: cover;
+            
+            width: 50%;
+            height: 100%;
+            min-height: 400px;
+            
+            float: left;
+            display: table;            
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        #about_title
+        {
+            color: white;
+            font-size: 30px;
+            
+            margin-left: 30%;
+        }
+        
+        #about_detail
+        {
+            color: white;
+            font-size: 20px;
+            
+            margin-left: 30%;
+        }
+        
+        #about_text
+        {
+            color: white;
+            
+            text-align: left;
+            margin-left: -20%;
+            margin-top: 10%;
+            
+            font-family: Heiti SC;
+        }
+        
+        #about_info
+        {
+            font-size: 15px;
+            color: #25AAFF;
+            
+            margin-left: 30%;
         }
         
         #btn_white
@@ -86,21 +211,61 @@
             height: 70px;
         }
         
+        #footer
+        {
+            font-size: 30px;
+            font-family: Apple SD Gothic Neo;
+            
+            background-color: black;
+            color: aliceblue;
+            
+            margin-top: 0px;
+            height: 300px;
+        }
     </style>
     
-    <body id=intro>
-        <section id=menu>
-            <div>MENU ㅡ</div>
-        </section>    
-        
-        <section id=title>
-            <div>HAEYUM<br>세상을 바꾸는 첫 걸음</div>
-            <br>
-            <button id=btn_white>다운로드</button>
-            <button id=btn_border>더 알아보기</button>
+    <body>
+        <section id=intro name=intro>
+            <section id=menu>
+                <div>MENU ㅡ</div>
+            </section>    
+
+            <section id=title name=title>
+                <div><b><u>HAEYUM</u></b><br>세상을 바꾸는 첫 걸음</div>
+                <br>
+                <button id=btn_white onClick=alert("준비중입니다!")>지원하기</button>
+                <a href=#about><button id=btn_border>자세히</button></a>
+            </section>
         </section>
+        
+        <section name=icon>
+            <h1 id=icon_text>2017년 하반기 지원자</h1>
+        </section>
+        
+        <section id=about>
+            <article id=about1></article>
+            <article id=about2>
+                <section id=about_text>
+                    <div id=about_title>당신만을 위한 소프트웨어<br><br></div>
+                    <div id=about_detail>당신이 원하는 모든 것이 여기에 있습니다!<br>사용자 입장에서 생각하는 모든 것!<br><br>그 무엇을 원하든 여기서 찾을 수 있습니다!<br><br></div>
+                    <div id=about_info><a href=#info>프로젝트 진행&emsp;➞</a></div>
+                </section>
+            </article>
+        </section>
+        
+        <section id=info>
+            
+        </section>
+        
+        <script type="text/javascript">
+
+            $("#intro").fadeOut(1).fadeIn(1000)
+
+        </script>
     </body>
     
-    
+    <footer id=footer>
+        <p align=center><br><br><br><br><br><br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.　</p>
+    </footer>
     
 </html>
