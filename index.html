@@ -34,6 +34,13 @@
             vertical-align:bottom;
         }
         
+        a
+        {
+            text-decoration: none;
+            
+            color: #48FAFF;
+        }
+        
         #intro
         {
             position: relative;
@@ -51,6 +58,8 @@
             
             vertical-align:top;
             display: block;
+            
+            font-family: Apple SD Gothic Neo;
         }
     
         #title
@@ -83,10 +92,20 @@
             font-size: 20px;
             text-align: center;
             color: #414B57;
-            line-height: 100px;
+            
+            min-height: 200px;
             vertical-align: middle;
             
             background-color: #F8F9FA;
+        }
+        
+        #icon_title
+        {
+            font-family: Apple SD Gothic Neo;
+            
+            vertical-align: middle;
+            font-size: 40px;
+            text-align: center;
         }
         
         #icon_text
@@ -95,7 +114,6 @@
             
             vertical-align: middle;
             font-size: 20px;
-            line-height: 100px;
             text-align: center;
         }
         
@@ -149,6 +167,7 @@
         
         #about_title
         {
+            font-family: Apple SD Gothic Neo;
             color: white;
             font-size: 30px;
             
@@ -157,6 +176,8 @@
         
         #about_detail
         {
+            font-family: Heiti SC;
+            
             color: white;
             font-size: 20px;
             
@@ -171,7 +192,9 @@
             margin-left: -20%;
             margin-top: 10%;
             
-            font-family: Heiti SC;
+            font-family: Apple SD Gothic Neo;
+            
+            <!-- Heiti SC-->
         }
         
         #about_info
@@ -180,6 +203,19 @@
             color: #48FAFF;
             
             margin-left: 30%;
+        }
+        
+        #info1
+        {
+            margin-bottom: 30px;
+            background: url('./img/feature-1.png');
+            min-height: 600px;
+            min-width: 300px;
+        }
+        
+        #info2
+        {
+            float: center;
         }
         
         #btn_white
@@ -224,7 +260,7 @@
         #footer_text
         {
             text-align: center;
-            line-height: 200px;
+            
             margin-top: 0%;
         }
         
@@ -245,7 +281,10 @@
         </section>
         
         <section id=icon name=icon>
-            <div id=icon_text>2017년 하반기 지원자</div>
+            <br><br>
+            <div id=icon_title>2017년 하반기 지원자<br></div>
+            <br>
+            <div id=icon_text>열람 권한이 부족합니다.</div>
         </section>
         
         <section id=about>
@@ -254,13 +293,18 @@
                 <section id=about_text>
                     <div id=about_title>당신만을 위한 소프트웨어<br><br></div>
                     <div id=about_detail>당신이 원하는 모든 것이 여기에 있습니다!<br>사용자 입장에서 생각하는 모든 것!<br><br>그 무엇을 원하든 여기서 찾을 수 있습니다!<br><br></div>
-                    <div id=about_info><a>프로젝트 진행&emsp;➞</a></div>
+                    <div id=about_info><a href=#footer>프로젝트 진행&emsp;➞</a></div>
                 </section>
             </article>
         </section>
         
         <section id=info>
-            
+            <article id=info1>
+                    <div >ㅇㅇㅇ</div>
+            </article>
+            <article>
+                <img src="img/feature-2.png" id=info2>
+            </article>
         </section>
         
         <script type="text/javascript">
@@ -271,7 +315,7 @@
     </body>
     
     <footer id=footer>
-        <p id=footer_text>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.</p>
+        <div id=footer_text><br><br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.<br></div>
     </footer>
     
 </html>
