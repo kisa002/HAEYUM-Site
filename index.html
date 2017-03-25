@@ -85,7 +85,7 @@
             margin-right: 90px;
         }
         
-        #icon
+        #notice
         {
             font-family: Apple SD Gothic Neo;
             
@@ -99,7 +99,7 @@
             background-color: #F8F9FA;
         }
         
-        #icon_title
+        #notice_title
         {
             font-family: Apple SD Gothic Neo;
             
@@ -108,7 +108,7 @@
             text-align: center;
         }
         
-        #icon_text
+        #notice_text
         {
             font-family: Apple SD Gothic Neo;
             
@@ -249,10 +249,82 @@
             margin-left: 0%;
         }
         
+        info_text1
+        {
+            font-size: 20px;
+            margin-left: 18%;
+        }
+        
         info_text2
         {
             font-size: 20px;
-            margin-left: 24%;
+            margin-left: 19.5%;
+        }
+        
+        info_text3
+        {
+            font-size: 20px;
+            margin-left: 19%;
+        }
+        
+        info_text11
+        {
+            font-size: 20px;
+            margin-left: 15.3%;
+        }
+        
+        info_text22
+        {
+            font-size: 20px;
+            margin-left: 13.5%;
+        }
+        
+        info_text23
+        {
+            font-size: 20px;
+            margin-left: 18%;
+        }
+        
+        #download
+        {
+            background-color: #4F7596;
+            min-height: 430px;
+            
+            margin-top: 7%;
+        }
+        
+        #download_title
+        {
+            font-size: 50px;
+            color: #FFFFFF;
+            line-height: 250px;
+            
+            text-align: center;
+        }
+        
+        #download_text
+        {
+            font-size: 30px;
+            color: #FFFFFF;
+            text-align: center;
+            
+            margin-top: -80px;
+        }
+        
+        #btn_download
+        {
+            background-color: rgba(0, 0, 0, 0);
+            color: white;
+            font-size: 30px;
+            border-radius: 10px;
+            border-color: #FFFFFF;
+            
+            margin-top: 5%;
+            margin-left: 43%;
+
+            font-size: 20px;
+            width: 170px;
+            height: 70px;
         }
         
         #btn_white
@@ -290,18 +362,26 @@
             background-color: black;
             color: aliceblue;
             
-            margin-top: 200px;
-            height: 200px;
+            margin-top: 00px;
+            height: 150px;
+        }
+        
+        #footer_title
+        {
+            font-size: 20px;
+            text-align: center;
         }
         
         #footer_text
         {
             text-align: center;
             
-            margin-top: 0%;
+            margin-top: 0px;
         }
         
     </style>
+    
+    <!-- footer -> margin-top: 200px; -->
     
     <body>
         <section id=intro name=intro>
@@ -317,11 +397,11 @@
             </section>
         </section>
         
-        <section id=icon name=icon>
+        <section id=notice name=notice>
             <br><br>
-            <div id=icon_title>2017년 하반기 지원자<br></div>
+            <div id=notice_title>2017년 하반기 지원자<br></div>
             <br>
-            <div id=icon_text>열람 권한이 부족합니다.</div>
+            <div id=notice_text>열람 권한이 부족합니다.</div>
         </section>
         
         <section id=about>
@@ -329,31 +409,43 @@
             <article id=about2>
                 <section id=about_text>
                     <div id=about_title>당신만을 위한 소프트웨어<br><br></div>
-                    <div id=about_detail>당신이 원하는 모든 것이 여기에 있습니다!<br>사용자 입장에서 생각하는 모든 것!<br><br>그 무엇을 원하든 여기서 찾을 수 있습니다!<br><br></div>
-                    <div id=about_info><a href=#footer>프로젝트 진행&emsp;➞</a></div>
+                    <div id=about_detail>당신이 원하는 모든 것이 여기에 있습니다<br>사용자 입장에서 생각하는 모든 것<br><br>그 무엇을 원하든 여기서 찾을 수 있습니다 !<br><br></div>
+                    <div id=about_info><a href=#download>프로젝트 진행&emsp;➞</a></div>
                 </section>
             </article>
         </section>
         
         <section name=info>
             <article id=info1>
-                <figue>
+                <figue name=asd>
                     <img src="img/feature-1.png" id=info_img>
                     <img src="img/feature-2.png" id=info_img>
                     <img src="img/feature-3.png" id=info_img>
                 </figue>
 
                 <figcaption id=info_figcaption>
-                    <info_title>모바일</info_title>
-                    <info_title2>이식성</info_title2>
+                    <info_title>이식성</info_title>
+                    <info_title2>궭뷁쭭</info_title2>
                     <info_title2>프리덤</info_title2>
+                    <br><br>
                 </figcaption>
-                <figcaption id=info_figcaption>
-                    <info_text>내 손안의 모든 것</info_text>
+                
+                <figcaption>
+                    <info_text1>다양한 OS를</info_text1>
                     <info_text2>이식성</info_text2>
-                    <info_text2>프리덤</info_text2>
+                    <info_text3>무엇을 써야할까</info_text3>
+                    <br>
+                    <info_text11>지원하는 소프트웨어</info_text11>
+                    <info_text22>프리 소프트웨어</info_text22>
                 </figcaption>
             </article>
+        </section>
+        
+        <section id=download name=downlaod>
+            <div id=download_title>당신의 새로운 비서</div>
+            <div id=download_text>Only for you</div>
+            
+            <button id=btn_download onClick=alert("배가­고프다")>Download</button>
         </section>
         
         <script type="text/javascript">
@@ -364,7 +456,8 @@
     </body>
     
     <footer id=footer>
-        <div id=footer_text><br><br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.<br></div>
+        <div id=footer_title><br><br><br>평촌경영고등학교 2학년 7반 유광무<br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.<br></div>
+        <!--<div id=footer_text><br><br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.<br></div>-->
     </footer>
     
 </html>
