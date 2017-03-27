@@ -82,7 +82,7 @@
             font-family: Apple SD Gothic Neo;
             text-align: right;
             
-            margin-right: 90px;
+            margin-right: 15%;
         }
         
         #notice
@@ -243,6 +243,12 @@
             margin-left: 24.5%;
         }
         
+        info_title3
+        {
+            font-size: 30px;
+            margin-left: 24%;
+        }
+        
         info_text
         {
             font-size: 20px;
@@ -264,7 +270,7 @@
         info_text3
         {
             font-size: 20px;
-            margin-left: 19%;
+            margin-left: 18.2%;
         }
         
         info_text11
@@ -276,13 +282,13 @@
         info_text22
         {
             font-size: 20px;
-            margin-left: 12.5%;
+            margin-left: 13%;
         }
         
-        info_text23
+        info_text33
         {
             font-size: 20px;
-            margin-left: 18%;
+            margin-left: 14.4%;
         }
         
         #download
@@ -295,7 +301,7 @@
         
         #download_title
         {
-            font-size: 50px;
+            font-size: 80px;
             color: #FFFFFF;
             line-height: 250px;
             
@@ -308,7 +314,7 @@
             color: #FFFFFF;
             text-align: center;
             
-            margin-top: -80px;
+            margin-top: -70px;
         }
         
         #btn_download
@@ -379,14 +385,46 @@
             margin-top: 0px;
         }
         
+        .intro a
+        {
+            color: white;    
+        }
+        
+        .menubar item ul
+        {
+            background: rgb(109,109,109);
+            opacity: 0;
+            height:auto;
+            margin-top: 0%;
+            margin-left: 77.6%;
+            border:0px;
+            position:absolute;
+            width:100px;
+            text-align: left;
+        }
+        
+        .menubar item:hover ul
+        {
+            opacity: 1;
+        }
+	
     </style>
     
     <!-- footer -> margin-top: 200px; -->
     
     <body>
-        <section id=intro name=intro>
+        <section id=intro name=intro class=intro>
             <section id=menu>
-                <div>MENU ㅡ</div>
+                <div class=menubar>
+                    <item><a href="#" id="current">MENU ㅡ</a>
+                     <ul>
+                        <item><a href="#about">About</a></item>
+                        <item><a href="#">Notice</a></item>
+                        <item><a href="#info">Info</a></item>
+                        <item><a href="#">Download</a></item>
+                     </ul>
+                    </item>
+                </div>
             </section>    
 
             <section id=title name=title>
@@ -424,31 +462,48 @@
                 </figue>
 
                 <figcaption id=info_figcaption>
-                  <info_title>이식성</info_title>
+                    <info_title>이식성</info_title>
                     <info_title2>창의성</info_title2>
-                    <info_title2>프리덤</info_title2>
+                    <info_title3>청소년</info_title3>
                     <br><br>
                 </figcaption>
                 
                 <figcaption>
                   <info_text1>다양한 OS를</info_text1>
-                    <info_text2> 신비로운</info_text2>
-                    <info_text3>무엇을 써야할까</info_text3>
+                    <info_text2>신비로운</info_text2>
+                    <info_text3>학생들로 구성된</info_text3>
                     <br>
                     <info_text11>지원하는 소프트웨어</info_text11>
-                    <info_text22> 색다른 아이디어</info_text22>
+                    <info_text22>색다른 아이디어</info_text22>
+                    <info_text33>청소년 인디개발사</info_text33>
                 </figcaption>
             </article>
         </section>
         
         <section id=download name=downlaod>
-            <div id=download_title>당신의 새로운 비서</div>
-            <div id=download_text>Only for you</div>
+            <div id=download_title>Jenna</div>
+            <div id=download_text>당신의 새로운 비서</div>
             
             <button id=btn_download onClick=alert("배가­고프다")>Download</button>
         </section>
         
-        
+        <!--
+        <div class="menubar">
+           <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#" id="current">Products</a>
+                 <ul>
+                   <li><a href="#">Sliders</a></li>
+                   <li><a href="#">Galleries</a></li>
+                   <li><a href="#">Apps</a></li>
+                   <li><a href="#">Extensions</a></li>
+                 </ul>
+              </li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Address</a></li>
+           </ul>
+        </div>
+        -->
         
         <script type="text/javascript">
 
@@ -458,7 +513,7 @@
     </body>
     
     <footer id=footer>
-        <div id=footer_title><br><br><br>평촌경영고등학교 2학년 7반 유광무<br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.<br></div>
+        <div id=footer_title><br>평촌경영고등학교 2학년 7반 유광무<br><br>본 웹페이지는 오픈소스없이 100% 수작업으로 개발되었습니다<br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.<br></div>
         <!--<div id=footer_text><br><br><br>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.<br></div>-->
     </footer>
     
