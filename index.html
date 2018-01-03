@@ -1,350 +1,143 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>HAEYUM</title>
 
-<head>
+        <link rel="stylesheet" href="css/core.css">
+        
+        <style>
+            @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+            *
+            {
+                font-family: "Nanum Gothic", sans-serif;
+            }
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="">
-    <meta name="keywords" content="해윰" />
-    <meta name="description" content="청소년 인디개발사 HAEYUM" />
+            body
+            {
+                margin: 0px;
+                background-color: #111111;
+            }
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="해윰(HAEYUM)">
-    <meta property="og:url" content="http://haeyum.com">
-    <meta property="og:description" content="청소년 인디 개발사 해윰입니다!">
-    <meta property="og:image" content="http://haeyum.com/img/HAEYUM_BANNER.png">
+            .top
+            {
+                height: 10%;
+            }
 
-    <title>청소년 인디 개발사 해윰</title>
+            .logo
+            {
+                text-align: center;
 
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+                font-size: 30px;
+                margin-left: 15%;
+            }
 
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+            .menu
+            {
+                padding: 0px;
+                margin-top: 2%;
 
-    <!-- Plugin CSS -->
-    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+                color: white;
+                list-style-type: none;
+            }
 
-    <!-- Theme CSS -->
-    <link href="css/creative.min.css" rel="stylesheet">
+            .menu .left
+            {
+                float: left;
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+                margin-top: 0.8%;
+                margin-left: 10%;
+            }
 
-</head>
+            .menu .right
+            {
+                float: right;
 
-<body id="page-top">
+                margin-top: 0.8%;
+                margin-right: 10%;
+            }
 
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">HAEYUM</a>
-            </div>
+            .main
+            {
+                background: url("./img/main.jpg") no-repeat center;
+                background-size: cover;
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#about">About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#services">Services</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio">Project</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
+                width: 100%;
+                height: 85%;
+            }
 
-    <header>
-        <div class="header-content">
-            <div class="header-content-inner">
-                <h1 id="homeHeading"><u>HAEYUM</u> <br>세상을 바꾸는 첫 걸음</h1>
-                <hr>
-                <p>학생들로 이루어진 소규모 팀입니다.<br>새로운 멋진 프로그램을 만들기위해 노력합니다!</p>
-                <a href="#join" class="btn btn-primary btn-xl page-scroll">지금 바로 지원하기</a>
+            .intro
+            {
+                color: white;
+
+                margin-left: 3%;
+                margin-top: 7%;
+            }
+
+            .intro .title
+            {
+                font-size: 60px;
+            }
+
+            .intro .subtitle
+            {
+                font-size: 40px;
+            }
+
+            button
+            {
+                border: none;
+                color: white;
+                cursor: pointer;
+
+                font-size: 16px;
+                text-align: center;
+
+                padding: 16px 32px;
+
+                transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s; /* Safari */
+            }
+
+            .join
+            {
+                margin-top: 2%;
+                padding: 1% 5%;
+
+                background-color: transparent; 
+                color: white; 
+
+                border: 2px solid #25AAFF;
+            }
+
+            .join:hover
+            {
+                padding: 1% 12.2%;
+
+                background-color: #25AAFF;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="top">
+            <ul class="menu">
+                <li class="left">About</li>
+                <li class="left">Projects</li>
+                <span class="logo"><b>HAEYUM</b></span>
+                <oi class="right">Our Team</oi>
+                <oi class="right">Contact</oi>
+            </ul>            
+        </section>
+
+        <section class="main">
+            <br>
+            <article class="intro">
+                <div class="title"><b>HAEYUM</b></div>
+                <div class="subtitle">세상을 바꾸는 첫 걸음</div>
                 
-                <!--
-                <br><br>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Only for you</a>
-                -->
-            </div>
-        </div>
-    </header>
-
-    <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">당신만을 위한 소프트웨어</h2>
-                    <hr class="light">
-                    <p class="text-faded">당신이 원하는 모든 것이 여기에 있습니다<br>사용자 입장에서 생각하는 모든 것<br>그 무엇을 원하든 여기서 찾을 수 있습니다 !</p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">그래서 특징이 뭐에요</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">해윰만의 특징</h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>스터디</h3>
-                        <p class="text-muted">다른 청소년들과 함께<br>새로운 지식을 습득합니다</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>청소년</h3>
-                        <p class="text-muted">학생들의 멋진 아이디어로<br>성인 못지않게 멋지게 도전합니다!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>창의성</h3>
-                        <p class="text-muted">신비롭고 색다른 아이디어로<br>세상을 놀라게할 준비를 합니다!</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
-                        <h3>이식성</h3>
-                        <p class="text-muted">특정 운영체제에 고집하지않고<br>다양한 기기에 지원되도록 노력합니다!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/1.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/1.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Android Game
-                                </div>
-                                <div class="project-name">
-                                    직업키우기 시리즈
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/2.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/2.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Android Game
-                                </div>
-                                <div class="project-name">
-                                    음료수회사 경영하기
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/3.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/3.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Android Game
-                                </div>
-                                <div class="project-name">
-                                    한국전쟁2030
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/4.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/4.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Android Utility
-                                </div>
-                                <div class="project-name">
-                                    경영시민
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/5.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/5.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Android Utility
-                                </div>
-                                <div class="project-name">
-                                    경기스쿨 도서관
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/6.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/6.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Android Utility
-                                </div>
-                                <div class="project-name">
-                                    하차 알리미
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/7.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/7.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    AR Simulation
-                                </div>
-                                <div class="project-name">
-                                    Hidden Gateway
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/8.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/8.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    VR Simulation
-                                </div>
-                                <div class="project-name">
-                                    Beyond Space
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a href="img/portfolio/fullsize/9.png" class="portfolio-box">
-                        <img src="img/portfolio/thumbnails/9.png" class="img-responsive" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Translation
-                                </div>
-                                <div class="project-name">
-                                    GameMaker: Studio2 Korean
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <aside class="bg-dark" id="join">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>지원할 준비가 되셨나요?</h2>
-                <p onClick=alert("는 만들고있어용...!!") class="btn btn-default btn-xl sr-button">지금 바로 지원하기!</p>
-            </div>
-        </div>
-    </aside>
-
-    <section id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">궁금한게 있어요!</h2>
-                    <hr class="primary">
-                    <p>궁금한점이 있으시나요? 그러면 언제든지 연락주세요!<br>누구보다 빠르게 남들과는 다르게 답변해드리도록 하겠습니다!</p>
-                </div>
-                <div class="col-lg-4 col-lg-offset-2 text-center">
-                    <i class="fa fa-phone fa-3x sr-contact"></i>
-                    <p>010-6348-1143</p>
-                </div>
-                <div class="col-lg-4 text-center">
-                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
-                    <p><a href="mailto:vnycall74@naver.com">vnycall74@naver.com</a></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
-    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
-    <!-- Theme JavaScript -->
-    <script src="js/creative.min.js"></script>
-
-</body>
-
-<footer>
-
-    <section class="bg-dark" id="footer">
-        <div class="container text-center">
-            <div class="call-to-action">
-                <h2>Copyright ⓒ 2014-2017 · HAEYUM All Rights Reserved.</h2>
-            </div>
-        </div>
-    </section>
-
-</footer>
-
+                <button class="join">지원하기</button>
+            </article>
+        </section>
+    </body>
 </html>
