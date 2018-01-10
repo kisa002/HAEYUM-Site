@@ -36,6 +36,8 @@
                 padding: 0px;
                 margin-top: 2%;
 
+                font-size: 1em;
+
                 color: black;
                 list-style-type: none;
             }
@@ -84,6 +86,7 @@
             .intro .subtitle
             {
                 font-size: 40px;
+                text-align: left;
             }
 
             button
@@ -141,7 +144,7 @@
 
             .introduce
             {
-                height: 85%;
+                height: 100%;
                 background-color: #F5F7FA;
             }
 
@@ -165,47 +168,48 @@
             .introduce .icons
             {
                 height: 46%;
-                margin-top: 8%;
+                margin-top: 5%;
 
                 text-align: center;
             }
 
-            .introduce .icon1
+            .introduce .unlist
             {
-                width: 10%;
-                height: 40%;
-
-                margin-right: 15%;
+                padding-left: 0px;
+                /* text-align: center; */
+                display: flex;
+                justify-content: center;
             }
 
-            .introduce .icon2
+            .introduce .list
             {
-                width: 10%;
-                height: 40%;
+                width: 30%;
+                
+                /* float: left; */
+                display: inline-block;
+                list-style-type:none;
             }
 
-            .introduce .icon3
+            .introduce .icon
             {
-                width: 10%;
-                height: 40%;
-
-                margin-left: 15%;
-            }
-
-            .icons .title1, .title2, .title3
-            {
-                font-size: 30px;
                 width: 50%;
+                height: 50%;
             }
 
-            .icons .title1
+            .list .title, .subtitle
             {
-                margin-right: 20%;
+                text-align: center;
             }
 
-            .icons .title3
+            .list .title
             {
-                margin-left: 20%;
+                font-size: 2em;
+            }
+
+            .list .subtitle
+            {
+                margin-top: 5%;
+                font-size: 1.3em;
             }
         </style>
     </head>
@@ -235,16 +239,30 @@
             <div class="title">What is HAEYUM</div><br>
             <div class="subtitle">청소년으로 구성된 해윰은 다양한 프로젝트를 진행 및 개발합니다.</div>
             <div class="subtitle">자신의 능력을 발휘할 수 있게 도와주고, 청소년의 기술력으로 세상을 놀라게 합니다.</div>
-            
-            <figure class="icons">    
-                <img src="./img/game.png" class="icon1">
-                <img src="./img/game.png" class="icon2">
-                <img src="./img/game.png" class="icon3">
-                <br>
-                <span class="title1">게임</span>
-                <span class="title2">게임</span>
-                <span class="title3">게임</span>
-            </figure>
+
+            <article class="icons">
+                <ul class="unlist">
+                    <li class="list">
+                        <img src="./img/game.png" class="icon">
+                        <div class="title">스터디</div>
+                        <div class="subtitle">다른 청소년들과 함께<br>새로운 지식을 습득합니다.</div>
+                    </li>
+                    <li class="list">
+                        <img src="./img/game.png" class="icon">
+                        <div class="title">청소년</div>
+                        <div class="subtitle">학생들의 멋진 아이디어로<br>성인 못지않게 멋지게 도전합니다!</div>
+                    </li>
+                    <li class="list">
+                        <img src="./img/game.png" class="icon">
+                        <div class="title">창의성</div>
+                        <div class="subtitle">신비롭고 색다른 아이디어로<br>세상을 놀라게할 준비를 합니다!</div>
+                    </li>
+                </ul>                
+            </article>
+        </section>
+
+        <section class="member" style="height:100%; margin-top: 3%;">
+            <div style="font-size:40px; text-align: center;">우리의 팀</div>
         </section>
     </body>
 </html>
