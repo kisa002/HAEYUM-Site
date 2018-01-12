@@ -28,7 +28,7 @@
                 text-align: center;
 
                 font-size: 30px;
-                margin-left: 15%;
+                /* margin-left: 15%; */
             }
 
             .menu
@@ -194,6 +194,15 @@
             {
                 width: 50%;
                 height: 50%;
+
+                transition-duration: 0.4s;
+                -webkit-transition-duration: 0.4s; /* Safari */
+            }
+
+            .icon:hover
+            {
+                width: 60%;
+                height: 60%;
             }
 
             .list .title, .subtitle
@@ -219,10 +228,10 @@
             <ul class="menu">
                 <li class="left">About</li>
                 <li class="left">Projects</li>
-                <span class="logo"><b>HAEYUM</b></span>
                 <oi class="right">Our Team</oi>
                 <oi class="right">Contact</oi>
             </ul>            
+            <div class="logo"><b>HAEYUM</b></div>
         </section>
 
         <section class="main">
