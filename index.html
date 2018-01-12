@@ -23,12 +23,21 @@
                 height: 10%;
             }
 
-            .logo
+            .top .logo
             {
+                width: 15%;
                 text-align: center;
 
-                font-size: 30px;
+                transition-duration: 0.4s;
+
+                /* font-size: 30px; */
                 /* margin-left: 15%; */
+            }
+
+            .top .logo:hover
+            {
+                margin-top: -0.5%;
+                width: 20%;
             }
 
             .menu
@@ -36,7 +45,8 @@
                 padding: 0px;
                 margin-top: 2%;
 
-                font-size: 1em;
+                font-size: 1.3em;
+                /* font-weight: bold; */
 
                 color: black;
                 list-style-type: none;
@@ -220,6 +230,92 @@
                 margin-top: 5%;
                 font-size: 1.3em;
             }
+
+            .projects
+            {
+                margin-top: 3%;
+
+                width: 100%;
+                height: 100%;
+            }
+
+            .projects .title
+            {
+                font-size:40px;
+                text-align: center;
+            }
+
+            .projects .show
+            {
+                /* width: 80%; */
+
+                text-align: center;
+            }
+
+            .projects .unlist
+            {
+                list-style: none;
+
+                padding-left: 0;
+
+                display: flex;
+                justify-content: center;
+            }
+
+            .projects .list
+            {
+                width: 30%;
+                height: 30%;
+
+                margin: 1%;
+                background-color: whitesmoke;
+                /* background-color: #25AAFF; */
+
+                position: relative;
+            }
+
+            .projects .show .unlist .list .logo
+            {
+                width: 100%;
+                height: 100%;
+
+                float: left;
+            }
+
+            .projects .show .unlist .list .logo:hover
+            {
+                visibility: hidden;
+            }
+
+            .projects .show .unlist .list .content
+            {
+                width: 100%;
+                height: 100%;
+
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.7);
+                /* background-color: rgba(68, 132, 252, 0.7); */
+
+                transition-duration: 0.6s;
+                opacity: 0;
+            }
+
+            .projects .show .unlist .list .content:hover
+            {
+                opacity: 1;
+            }
+
+            .projects .show .unlist .list .content .title
+            {
+                font-size: 1.8em;
+
+                margin-top: 15%;
+            }
+
+            .projects .show .unlist .list .content .category
+            {
+                font-size: 1.5em;
+            }
         </style>
     </head>
 
@@ -230,8 +326,9 @@
                 <li class="left">Projects</li>
                 <oi class="right">Our Team</oi>
                 <oi class="right">Contact</oi>
-            </ul>            
-            <div class="logo"><b>HAEYUM</b></div>
+            </ul>
+            <div style="text-align: center"><a href=""><img src="./img/logo.png" class="logo"></a></div>
+            <!-- <div class="logo"><b>HAEYUM</b></div> -->
         </section>
 
         <section class="main">
@@ -267,6 +364,66 @@
                         <div class="subtitle">신비롭고 색다른 아이디어로<br>세상을 놀라게할 준비를 합니다!</div>
                     </li>
                 </ul>                
+            </article>
+        </section>
+
+        <section class="projects">
+            <div class="title">Projects</div>
+
+            <article class="show">
+                <ol class="unlist">
+                    <li class="list">
+                        <img src="./img/card2.png" class="logo">
+
+                        <div class="content">
+                            <div class="title">Project Title</div>
+                            <div class="name">Project Category</div>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <img src="./img/card2.png" class="logo">
+
+                        <div class="content">
+                            <div class="title">Project Title</div>
+                            <div class="name">Project Category</div>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <img src="./img/card2.png" class="logo">
+
+                        <div class="content">
+                            <div class="title">Project Title</div>
+                            <div class="name">Project Category</div>
+                        </div>
+                    </li>
+                </ol>
+
+                <ol class="unlist">
+                    <li class="list">
+                        <img src="./img/card2.png" class="logo">
+
+                        <div class="content">
+                            <div class="title">Project Title</div>
+                            <div class="name">Project Category</div>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <img src="./img/card2.png" class="logo">
+
+                        <div class="content">
+                            <div class="title">Project Title</div>
+                            <div class="name">Project Category</div>
+                        </div>
+                    </li>
+                    <li class="list">
+                        <img src="./img/card2.png" class="logo">
+
+                        <div class="content">
+                            <div class="title">Project Title</div>
+                            <div class="name">Project Category</div>
+                        </div>
+                    </li>
+                </ol>
             </article>
         </section>
 
